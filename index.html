@@ -10,11 +10,15 @@
 <body>
     <script id="entry-template" type="text/x-handlebars-template">
         <div class="entry">
-          <h1>{{title}}</h1>
+          <h1>Pokemons</h1>
           <div class="body">
-            {{body}}
+            {{#each pokemons}}
+                <div>
+                    <div>{{@index}}</div>
+                    <div>{{this.name}}</div>
+                </div>
+            {{/each}}
           </div>
-          <img src={{imgURL}} width="200" alt="">
         </div>
     </script>
 </body>
