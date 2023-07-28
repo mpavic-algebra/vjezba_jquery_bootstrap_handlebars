@@ -7,5 +7,5 @@
     const context = { pokemons };
     const html = template(context);
     
-    document.querySelector("body").innerHTML = html
+    document.querySelector("#result").innerHTML = html
 })()
